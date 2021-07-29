@@ -21,12 +21,9 @@ export default {
       el: '#vcomments' ,
       appId: 'AeJrrFpeevG1UiXFy0RufFhV-gzGzoHsz',// your appId
       appKey: 'RFxdGsbQTJynqfAbQLh5Nzop', // your appKey
-      notify:false, 
-      verify:false, 
       avatar:'mm', 
       path: window.location.pathname,
       placeholder: '留下你想说的话吧~',
-      meta: ['昵称','邮箱','网址'],
     });
 
     var infoEle = document.querySelector('#vcomments .info');
@@ -42,31 +39,62 @@ export default {
 
 <style>
     #vcomments .vheader .vnick {
-        width: 31%;
+        width: 29%;
         border: 1px solid #dedede;
+        margin-left: 12px;
         padding-left: 12px;
         padding-right: 8px;
         border-radius: 8px
     }
 
     #vcomments .vheader .vmail {
-        width: 31%;
+        width: 29%;
         border: 1px solid #dedede;
-        margin-left: 24px;
+        margin-left: 32px;
         padding-left: 12px;
         padding-right: 8px;
         border-radius: 8px
     }
 
     #vcomments .vheader .vlink {
-        width: 31%;
+        width: 29%;
         border: 1px solid #dedede;
-        margin-left: 24px;
+        margin-left: 32px;
         padding-left: 12px;
         padding-right: 8px;
         border-radius: 8px
     }
+
     .vpower.txt-right {
         display: none;
+    }
+    .vsys{
+        display:none !important;
+    }
+
+    img.vimg {
+        transition: all 1s   /* 旋转时间为 1s */
+    }
+    img.vimg:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+
+    #vcomments .vcards .vcard {
+        padding: 15px 20px 0 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+        transition: all .3s
+    }
+    #vcomments .vcards .vcard:hover {
+        box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+    }
+    #vcomments .vcards .vcard .vh .vcard {
+        border: none;
+        box-shadow: none;
     }
 </style>

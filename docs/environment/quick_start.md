@@ -22,12 +22,12 @@
       }
    }
    ```
-6. 为了快速配置目录，可以到我的[Github仓库](https://github.com/Wang-Si-Tu/vuepress-starter)中将代码下载下来，然后将文件夹里面的东西复制粘贴到`vuepress-starter`文件夹中，且重复的文件都覆盖掉。
+6. 为了快速配置目录，可以到我的[Github仓库](https://github.com/Wang-Si-Tu/vuepress-starter)中将代码下载下来，然后将文件夹里面的东西复制粘贴到`vuepress-starter`文件夹中，且重复的文件都覆盖掉。<Badge text="参考目录结构" type="tip" vertical="top"/>
    <div align=center>
    <img :src="$withBase('/屏幕截图 2021-07-28 120409.png')" style="zoom:80%;" />
    </div>
 
-7. 最后打开文件夹的命令行，启动服务器
+7. 最后打开文件夹的命令行，输入以下命令，开始调试
    ``` sh
    npm run dev
    ```

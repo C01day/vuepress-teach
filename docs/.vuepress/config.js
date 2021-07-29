@@ -6,7 +6,7 @@ module.exports = {
         // sidebar: 'auto',
         sidebarDepth: 2,
         smoothScroll: true,
-        lastUpdated: 'Last Updated',
+        lastUpdated: '上次更新',
         // displayAllHeaders: true,
         nav: [
           { text: '首页', link: '/' },
@@ -15,7 +15,7 @@ module.exports = {
           { text: '环境配置', link: '/environment/' },
           { text: '基础教程', link: '/course/' },
           { text: '网站部署', link: '/deployment/' },
-          { text: 'Github链接', link: 'https://google.com' }
+          { text: 'Github', link: 'https://github.com/C01day/vuepress-teach' }
         ],
         sidebar: {
           '/test/': [
