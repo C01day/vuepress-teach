@@ -1,7 +1,7 @@
 module.exports = {
     title: '如何搭建博客',
     description: '基于vuepress',
-    base: '/vuepress-teach/',
+    base: "/vuepress-teach/",
     themeConfig: {
         // sidebar: 'auto',
         sidebarDepth: 2,
