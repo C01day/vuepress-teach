@@ -62,7 +62,7 @@ module.exports = {
                 ['directory_structure.md','目录结构'],
                 ['navigation_bar.md','导航栏'],
                 ['sidebar.md','侧边栏'],
-                ['grammar.md','markdown基础语法'],
+                ['grammar.md',' markdown 基础语法'],
               ]
             }
           ],
