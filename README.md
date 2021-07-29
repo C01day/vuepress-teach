@@ -1,1 +1,1 @@
-基于vuepress的博客教程:tada::tada::tada:
+基于vuepress的博客教程
