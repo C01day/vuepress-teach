@@ -39,5 +39,5 @@ vuepress是基于node.js语言的，因此需要到[node.js官方网站](http://
 然后再次打开命令行，输入 npm ，看看有没有这个命令。
 
 
-<br/>
+<br/><br/>
 <Valine></Valine>

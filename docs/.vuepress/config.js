@@ -55,11 +55,11 @@ module.exports = {
           '/course/': [
             {
               title: '基础教程',   // 一级菜单名称
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 2,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
               children: [
                 ['','主要内容'],
-                ['directory_structure.md','目录结构'],
+                ['directory_structure.md','项目框架'],
                 ['navigation_bar.md','导航栏'],
                 ['sidebar.md','侧边栏'],
                 ['grammar.md',' markdown 基础语法'],

@@ -8,5 +8,5 @@ vertical - string, 可选值： "top"|"middle"，默认值是： "top"
 
 ​		可以到[VSCode官网](https://code.visualstudio.com/)去下载对应的安装包。
 
-<br/>
+<br/><br/>
 <Valine></Valine>
