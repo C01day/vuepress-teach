@@ -1,7 +1,7 @@
 ---
 home: true
-# heroImage: /hero.png
-heroText: 如何搭建博客
+heroImage: /favicon.png
+heroText: 搭建博客
 tagline: 基于vuepress
 actionText: 快速上手 →
 actionLink: /guide/
@@ -16,6 +16,8 @@ footer: Copyright © 2021 C01day,All Rights Reserved.
 
 # sidebar: auto
 ---
+
+
 
 ::: tip 提示
 这是一个提示

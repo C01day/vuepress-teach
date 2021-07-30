@@ -1,5 +1,16 @@
 <template>
-  <div id="vcomments"></div>
+<div>
+    <span class="leancloud-visitors">
+        <!-- <span class="stat update-time">
+            <img class="icon" src="/update-time.png" />{{$page.lastUpdated}}
+        </span> -->
+        <span class="stat read-count">
+            <img class="icon" :src="$withBase('/read-count.png')" />
+            <span class="leancloud-visitors-count"></span>
+        </span>
+    </span>
+    <div id="vcomments"></div>
+</div>
 </template>
 
 <script>
@@ -24,6 +35,7 @@ export default {
       avatar:'mm', 
       path: window.location.pathname,
       placeholder: '留下你想说的话吧~',
+      visitor: true,
     });
 
     var infoEle = document.querySelector('#vcomments .info');
@@ -31,7 +43,7 @@ export default {
         infoEle.childNodes.forEach(function(item) {
             item.parentNode.removeChild(item);
         });
-    }
+    }//去掉角标
 
   },
 }
@@ -41,7 +53,7 @@ export default {
     #vcomments .vheader .vnick {
         width: 29%;
         border: 1px solid #dedede;
-        margin-left: 12px;
+        margin-left: 2%;
         padding-left: 12px;
         padding-right: 8px;
         border-radius: 8px
@@ -50,7 +62,7 @@ export default {
     #vcomments .vheader .vmail {
         width: 29%;
         border: 1px solid #dedede;
-        margin-left: 32px;
+        margin-left: 4%;
         padding-left: 12px;
         padding-right: 8px;
         border-radius: 8px
@@ -59,7 +71,7 @@ export default {
     #vcomments .vheader .vlink {
         width: 29%;
         border: 1px solid #dedede;
-        margin-left: 32px;
+        margin-left: 4%;
         padding-left: 12px;
         padding-right: 8px;
         border-radius: 8px
@@ -97,4 +109,19 @@ export default {
         border: none;
         box-shadow: none;
     }
+
+    .icon {
+        width: 18px;
+        margin-right: 4px;
+        vertical-align: middle;
+        opacity: 1;
+    }
+    .leancloud-visitors-count {
+        vertical-align: middle;
+    }
+    .stat {
+        font-size: 14px;
+        opacity: .6;
+    }
+
 </style>

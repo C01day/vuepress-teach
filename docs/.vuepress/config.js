@@ -1,13 +1,20 @@
 module.exports = {
-    title: '如何搭建博客',
+    // theme: 'reco',
+    title: '搭建博客',
     description: '基于vuepress',
     base: "/vuepress-teach/",
     themeConfig: {
         // sidebar: 'auto',
+        // type: 'blog',
         sidebarDepth: 2,
         smoothScroll: true,
         lastUpdated: '上次更新',
         // displayAllHeaders: true,
+
+        head: [
+          ['link', { rel: 'icon', href: 'favicon.ico' }],
+        ],
+
         nav: [
           { text: '首页', link: '/' },
           { text: '测试', link: '/test/' },
@@ -15,7 +22,29 @@ module.exports = {
           { text: '环境配置', link: '/environment/' },
           { text: '基础教程', link: '/course/' },
           { text: '网站部署', link: '/deployment/' },
-          { text: 'Github', link: 'https://github.com/C01day/vuepress-teach' }
+          { text: 'Github', link: 'https://github.com/C01day/vuepress-teach' },
+
+          // {
+          //   text: '语言',
+          //   ariaLabel: '语言菜单',
+          //   items: [
+          //     {
+          //         text: '亚洲', 
+          //         items: [
+          //             { text: '中文', link: '/language/chinese/' },
+          //             { text: '日语', link: '/language/japanese/' }
+          //         ]
+          //     },
+          //     {
+          //         text: '欧洲',
+          //         items: [
+          //             { text: '英语', link: '/language/english/' },
+          //             { text: '法语', link: '/language/french/' }
+          //         ]
+          //     },
+          //   ]
+          // }
+
         ],
         sidebar: {
           '/test/': [
@@ -72,20 +101,46 @@ module.exports = {
         //   indexName: '<INDEX_NAME>'
         // },
       },
-      // plugins: [
-      //   [
-      //     'vuepress-plugin-comment',
-      //     {
-      //       choosen: 'valine', 
-      //       // options选项中的所有参数，会传给Valine的配置
-      //       options: {
-      //         el: '#valine-vuepress-comment',
-      //         appId: 'AeJrrFpeevG1UiXFy0RufFhV-gzGzoHsz',
-      //         appKey: 'RFxdGsbQTJynqfAbQLh5Nzop',
-      //         placeholder: '留下你想说的话吧~',
-      //         avatar: 'mp',           // 评论用户的头像类型
-      //       }
-      //     }
-      //   ]
-      // ]
+      plugins: [
+        [
+          'one-click-copy', // 复制
+          {
+            copySelector: [
+              'div[class*="language-"] pre',
+              'div[class*="aside-code"] aside',
+            ],
+            copyMessage: '复制成功',
+            duration: 1000,
+            showInMobile: true,
+          },
+        ],
+        [
+          'go-top'
+        ],
+        // [
+        //   '@vuepress/blog'
+        // ],
+        [
+          'cursor-effects',
+          {
+             size: 2, // 粒子大小
+             shape: 'star', // 粒子形状（可选 'star' 和 'circle'）
+             zIndex: 999999999,
+          },
+        ],
+        // [
+        //   'vuepress-plugin-comment',
+        //   {
+        //     choosen: 'valine', 
+        //     // options选项中的所有参数，会传给Valine的配置
+        //     options: {
+        //       el: '#valine-vuepress-comment',
+        //       appId: 'AeJrrFpeevG1UiXFy0RufFhV-gzGzoHsz',
+        //       appKey: 'RFxdGsbQTJynqfAbQLh5Nzop',
+        //       placeholder: '留下你想说的话吧~',
+        //       avatar: 'mp',           // 评论用户的头像类型
+        //     }
+        //   }
+        // ]
+      ]
   }
