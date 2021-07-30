@@ -3,6 +3,9 @@ module.exports = {
     title: '搭建博客',
     description: '基于vuepress',
     base: "/vuepress-teach/",
+    markdown: {
+      lineNumbers: true
+    },
     themeConfig: {
         // sidebar: 'auto',
         // type: 'blog',
@@ -12,12 +15,12 @@ module.exports = {
         // displayAllHeaders: true,
 
         head: [
-          ['link', { rel: 'icon', href: 'favicon.ico' }],
+          ['link', { rel: 'icon', href: '/favicon.ico' }],
         ],
 
         nav: [
           { text: '首页', link: '/' },
-          { text: '测试', link: '/test/' },
+          // { text: '测试', link: '/test/' },
           { text: '教程介绍', link: '/guide/' },
           { text: '环境配置', link: '/environment/' },
           { text: '基础教程', link: '/course/' },
@@ -47,18 +50,18 @@ module.exports = {
 
         ],
         sidebar: {
-          '/test/': [
-            {
-              title: 'vue的入门',   // 一级菜单名称
-              collapsable: false, // false为默认展开菜单, 默认值true是折叠,
-              sidebarDepth: 2,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
-              children: [
-                ['','VSCode安装'],
-                ['vue_introduction.md','vue入门'],
-                ['environment_config.md','环境配置'],
-              ]
-            }
-          ],
+          // '/test/': [
+          //   {
+          //     title: 'vue的入门',   // 一级菜单名称
+          //     collapsable: false, // false为默认展开菜单, 默认值true是折叠,
+          //     sidebarDepth: 2,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
+          //     children: [
+          //       ['','VSCode安装'],
+          //       ['vue_introduction.md','vue入门'],
+          //       ['environment_config.md','环境配置'],
+          //     ]
+          //   }
+          // ],
           '/guide/': [
             {
               collapsable: false, // false为默认展开菜单, 默认值true是折叠,
@@ -117,9 +120,24 @@ module.exports = {
         [
           'go-top'
         ],
+
+        // [
+        //   '@vuepress/medium-zoom', 
+        //   {
+        //     selector: ".medium-zoom",
+        //     options: {
+        //       margin: 24,
+        //       scrollOffset: 0
+        //       // container: '#zoom-container',
+        //       // template: '#zoom-template',
+        //     }
+        //   },
+        // ],
+
         // [
         //   '@vuepress/blog'
         // ],
+
         [
           'cursor-effects',
           {
@@ -128,6 +146,7 @@ module.exports = {
              zIndex: 999999999,
           },
         ],
+
         // [
         //   'vuepress-plugin-comment',
         //   {
@@ -142,5 +161,6 @@ module.exports = {
         //     }
         //   }
         // ]
+
       ]
   }

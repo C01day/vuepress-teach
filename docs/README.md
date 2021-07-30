@@ -2,7 +2,7 @@
 home: true
 heroImage: /favicon.png
 heroText: 搭建博客
-tagline: 基于vuepress
+tagline: ------------------------------------------------------
 actionText: 快速上手 →
 actionLink: /guide/
 features:
