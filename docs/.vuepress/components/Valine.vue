@@ -1,6 +1,6 @@
 <template>
 <div>
-    <span class="leancloud-visitors">
+    <span :id="vuepress_path" class="leancloud_visitors">
         <!-- <span class="stat update-time">
             <img class="icon" src="/update-time.png" />{{$page.lastUpdated}}
         </span> -->
@@ -17,10 +17,13 @@
 export default {
   name: 'Valine',
   data() {
-    return {};
+    return {
+        vuepress_path: "/vuepress-teach"+this.$route.path,
+    };
   },
   mounted: function(){
     // require window 
+    // console.log(this.$route.path);
     const Valine = require('valine');
     if (typeof window !== 'undefined') {
       this.window = window
