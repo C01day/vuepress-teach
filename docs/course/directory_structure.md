@@ -32,7 +32,11 @@ vuepress-teach 中的 docs 文件夹是项目中最重要的部分，所有页�
 └─guide
        README.md
 ```
-`.md`文件表示的是 markdown 文件，代表一个网页页面的原型。
+`.md`文件表示的是 markdown 文件，代表一个网页页面的原型。<Badge text="下节介绍" type="tip"/>
+
+`.js`文件表示的是 JavaScript 文件，这里充当配置文件使用，涉及的语法非常简单，不用太过担心。<Badge text="下节介绍" type="tip"/>
+
+`.vue`文件不用考虑。
 
 `docs/.vuepress`: 用于存放全局的配置文件、静态资源等。
 

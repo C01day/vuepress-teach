@@ -15,7 +15,7 @@ module.exports = {
         // displayAllHeaders: true,
 
         head: [
-          ['link', { rel: 'icon', href: '/vuepress-teach/favicon.ico' }],
+          ['link', { rel: 'icon', href: 'favicon.ico' }],
         ],
 
         nav: [
@@ -92,9 +92,9 @@ module.exports = {
               children: [
                 ['','主要内容'],
                 ['directory_structure.md','项目框架'],
+                ['grammar.md','基础语法'],
                 ['navigation_bar.md','导航栏'],
                 ['sidebar.md','侧边栏'],
-                ['grammar.md',' markdown 基础语法'],
               ]
             }
           ],
