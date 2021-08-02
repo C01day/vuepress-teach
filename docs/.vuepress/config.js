@@ -117,9 +117,10 @@ module.exports = {
             showInMobile: true,
           },
         ],
-        [
-          'go-top'
-        ],
+
+        // [
+        //   'go-top'
+        // ],
 
         // [
         //   '@vuepress/medium-zoom', 
@@ -138,14 +139,14 @@ module.exports = {
         //   '@vuepress/blog'
         // ],
 
-        [
-          'cursor-effects',
-          {
-             size: 2, // 粒子大小
-             shape: 'star', // 粒子形状（可选 'star' 和 'circle'）
-             zIndex: 999999999,
-          },
-        ],
+        // [
+        //   'cursor-effects',
+        //   {
+        //      size: 2, // 粒子大小
+        //      shape: 'star', // 粒子形状（可选 'star' 和 'circle'）
+        //      zIndex: 999999999,
+        //   },
+        // ],
 
         // [
         //   'vuepress-plugin-comment',
@@ -161,6 +162,8 @@ module.exports = {
         //     }
         //   }
         // ]
-
+        [
+          '@vuepress/back-to-top'
+        ],
       ]
   }
