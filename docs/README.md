@@ -20,19 +20,7 @@ footer: Copyright © 2021 C01day,All Rights Reserved.
 
 
 ::: tip 提示
-这是一个提示
-:::
-
-::: warning 警告
-这是一个警告
-:::
-
-::: danger 危险
-这是一个危险警告
-:::
-
-::: details 详情
-这是一个详情块，在 IE / Edge 中不生效
+如果您有任何疑问，欢迎在下方留言~
 :::
 
 <br/><br/>
