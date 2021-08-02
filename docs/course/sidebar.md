@@ -1,3 +1,4 @@
+
 # 侧边栏<Badge text="重要" type="error"/>
 
 侧边栏处在页面左边，作为目录使用，点击目录可以跳转到相应的标题下。
@@ -40,15 +41,46 @@ module.exports = {
 
 第5行中，用`/course/`表示我们要配置的侧边栏的路径。之后的`title`表示侧边栏目录的大标题。`collapsable`表示是否折叠，默认为`true`表示折叠。`sidebarDepth`表示侧边栏目录的深度，不用深入了解。
 
+<div align=center>
+<img :src="$withBase('/屏幕截图 2021-08-02 101347.png')" style="zoom:80%;" />
+</div>
+
+<center>
+1. title 大标题
+</center>
+
 之后在`children`中配置子文件，代表这些文件的标题将会被配置为`/course/`下的侧边栏目录，点击侧边栏相应的标题会跳转到对应的文章。
 
 首先是入口文件`README.md`，之前讲过，它不需要显式地指定，因此用`''`表示便可（代码第11行），然后用方括号括起来，再在后面指定这篇文章的标题。
 
-再比如本篇文章`sidebar.md`，路径为`/course/sidebar.md`，只需把它放在`/course/`下面，然后指定文章的标题便可。
+比如本篇文章`sidebar.md`，路径为`/course/sidebar.md`，只需把它放在`/course/`下面，然后指定文章的标题便可。
 
 :::tip 提示
 配置的标题都是文章的大标题，文章中的小标题不用我们自己在侧边栏中配置，系统会帮我们自动生成。
 :::
+
+## 自动生成侧边栏
+
+如果你希望自动生成一个仅仅包含了当前页面标题（headers）的侧边栏，你可以将下面这段`YAML front matter`代码写在想要自动生成目录的 md 文章最上方：
+
+``` yaml
+---
+sidebar: auto
+---
+```
+
+:::tip 提示
+顺带一提，`仅仅包含了当前页面标题的侧边栏`指的是侧边栏目录中只有当前文章的目录，其他文章的目录则消失了。虽然方便，但最好该栏目只有一篇文章的情况下使用。
+:::
+
+``` js
+// .vuepress/config.js
+module.exports = {
+  themeConfig: {
+    sidebar: 'auto'
+  }
+}
+```
 
 <br/><br/>
 <Valine></Valine>
