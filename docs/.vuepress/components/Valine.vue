@@ -18,7 +18,9 @@ export default {
   name: 'Valine',
   data() {
     return {
-        vuepress_path: "/vuepress-teach" + this.$route.path,
+        vuepress_path:
+        //  "/vuepress-teach" + 
+        this.$route.path,
     };
   },
   mounted: function(){

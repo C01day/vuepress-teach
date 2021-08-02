@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /favicon.png
-heroText: 搭建博客
-tagline: ------------------------------------------------------
+heroText: 豆姆智能科技
+tagline: 如何搭建一个博客
 actionText: 快速上手 →
 actionLink: /guide/
 features:

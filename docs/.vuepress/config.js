@@ -1,8 +1,8 @@
 module.exports = {
     // theme: 'reco',
     title: '搭建博客',
-    description: '基于vuepress',
-    base: "/vuepress-teach/",
+    description: '豆姆智能科技',
+    // base: "/vuepress-teach/",
     markdown: {
       lineNumbers: true
     },
@@ -15,7 +15,7 @@ module.exports = {
         // displayAllHeaders: true,
 
         head: [
-          ['link', { rel: 'icon', href: 'favicon.ico' }],
+          ['link', { rel: 'icon', href: '/favicon.ico' }],
         ],
 
         nav: [
