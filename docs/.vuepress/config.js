@@ -1,6 +1,6 @@
 module.exports = {
     // theme: 'reco',
-    title: '搭建博客',
+    title: '搭建博客 by 豆姆',
     description: '豆姆智能科技',
     // base: "/vuepress-teach/",
     markdown: {
@@ -11,7 +11,7 @@ module.exports = {
         // type: 'blog',
         sidebarDepth: 2,
         smoothScroll: true,
-        lastUpdated: '上次更新',
+        lastUpdated: '上次更新时间',
         // displayAllHeaders: true,
 
         head: [
