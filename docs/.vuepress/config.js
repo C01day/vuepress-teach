@@ -165,5 +165,11 @@ module.exports = {
         [
           '@vuepress/back-to-top'
         ],
+        [
+          'sitemap', 
+          {
+            hostname: 'https://c01day.top/'
+          },
+        ]
       ]
   }
