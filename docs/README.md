@@ -18,9 +18,8 @@ footer: Copyright © 2021 domo,All Rights Reserved.
 ---
 <br/><br/><br/><br/>
 ![](https://img.shields.io/badge/frame-vuepress-brightgreen)
-![](https://img.shields.io/badge/author-C01day-blue)
+[![](https://img.shields.io/badge/author-C01day-blue)](https://www.c01day.com)
 ![](https://img.shields.io/badge/email-24602250%40qq.com-red)
-
 [![](https://img.shields.io/badge/Github-C01day-lightgrey)](https://github.com/C01day)
 [![](https://img.shields.io/badge/deploy-github%20pages-9cf)](https://github.com/C01day/vuepress-teach/tree/gh-pages)
 ![](https://img.shields.io/badge/deploy-vercel-9cf)
