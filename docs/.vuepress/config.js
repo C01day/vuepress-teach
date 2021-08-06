@@ -168,7 +168,7 @@ module.exports = {
         [
           'sitemap', 
           {
-            hostname: 'https://c01day.top/'
+            hostname: 'https://www.c01day.top/'
           },
         ]
       ]
