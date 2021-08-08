@@ -145,9 +145,25 @@ sh deploy.sh
 
 由于在 Github pages 上部署的网页不能被百度蜘蛛爬取到，因此我们迁移到 Vercel 。当然，要是不怎么在乎百度是否收录，可以跳过此节。
 
+### 更改 dest
+之前打包的路径为`docs/.vuepress/dist`，由于 vercel 上部署的项目默认是`main`分支，会在分支中寻找`public`文件，因此需要在`config.js`中设置 dest ，将打包文件路径改为`public`：
+
+``` js
+// .vuepress/config.js
+module.exports = {
+  dest: 'public',
+}
+```
+并将之前`deploy.sh`中的`cd docs/.vuepress/dist`改为
+``` sh
+# deploy.sh
+cd public
+```
+
+### 导入项目
+
 首先在[vercel官网](https://vercel.com/)注册账号。之后创建一个项目，导入 Github 上的仓库，步骤默认即可。
 
-需要注意的是， vercel 上部署的项目默认是`main`分支，会在分支中寻找`public`文件，因此第一次导入
 
 <br/><br/>
 <Valine></Valine>
