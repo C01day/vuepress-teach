@@ -3,6 +3,7 @@ module.exports = {
     title: '搭建博客 by 豆姆',
     description: '豆姆智能科技',
     // base: "/vuepress-teach/",
+    dest: 'public',
     markdown: {
       lineNumbers: true
     },
@@ -98,6 +99,9 @@ module.exports = {
               ]
             }
           ],
+
+          
+
         },
         // algolia: {
         //   apiKey: '<API_KEY>',
