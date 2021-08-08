@@ -76,3 +76,4 @@ typings/
 .fusebox/
 
 docs/.vuepress/dist/
+public/
