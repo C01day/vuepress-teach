@@ -172,8 +172,21 @@ module.exports = {
         [
           'sitemap', 
           {
-            hostname: 'https://www.c01day.top/'
+            hostname: 'https://www.c01day.top/',
+            dateFormatter: val => {
+              return new Date().toISOString()
+            }
           },
-        ]
+        ],
+        [
+          '@vuepress/last-updated', 
+          {
+            transformer: (timestamp, lang) => {
+              const moment = require("moment");
+              moment.locale(lang);
+              return moment(timestamp).fromNow();
+            }
+          }
+        ],
       ]
   }
