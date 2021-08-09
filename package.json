@@ -21,6 +21,7 @@
     "vuepress-theme-reco": "^1.6.6"
   },
   "dependencies": {
+    "moment": "^2.29.1",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-one-click-copy": "^1.0.5",
     "vuepress-plugin-sitemap": "^2.3.1"
