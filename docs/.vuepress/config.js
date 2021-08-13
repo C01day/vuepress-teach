@@ -21,7 +21,7 @@ module.exports = {
 
         nav: [
           { text: '首页', link: '/' },
-          // { text: '测试', link: '/test/' },
+          { text: 'vue组件', link: '/test/' },
           { text: '教程介绍', link: '/guide/' },
           { text: '环境配置', link: '/environment/' },
           { text: '基础教程', link: '/course/' },
@@ -53,13 +53,13 @@ module.exports = {
         sidebar: {
           // '/test/': [
           //   {
-          //     title: 'vue的入门',   // 一级菜单名称
+          //     title: 'vue组件',   // 一级菜单名称
           //     collapsable: false, // false为默认展开菜单, 默认值true是折叠,
           //     sidebarDepth: 2,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
           //     children: [
-          //       ['','VSCode安装'],
-          //       ['vue_introduction.md','vue入门'],
-          //       ['environment_config.md','环境配置'],
+          //       ['','vue组件'],
+          //       // ['vue_introduction.md','vue入门'],
+          //       // ['environment_config.md','环境配置'],
           //     ]
           //   }
           // ],
