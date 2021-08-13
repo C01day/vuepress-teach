@@ -21,7 +21,7 @@ module.exports = {
 
         nav: [
           { text: '首页', link: '/' },
-          { text: 'vue组件', link: '/test/' },
+          { text: 'vue组件', link: '/component/' },
           { text: '教程介绍', link: '/guide/' },
           { text: '环境配置', link: '/environment/' },
           { text: '基础教程', link: '/course/' },

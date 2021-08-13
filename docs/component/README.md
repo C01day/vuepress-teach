@@ -28,54 +28,50 @@ links:
     items:
       - sitename: What If?
         url: https://note.zxh.io
-        # img: /img/links/me.svg
         desc: 乱七八糟的笔记
       - sitename: Portfolio-macOS
         url: https://portfolio.zxh.io/
-        # img: /img/links/portfolio.png
         desc: 仿 masOS 的个人主页
       - sitename: OI & ACM
         url: https://oi.zxh.io
-        # img: /img/links/acm.svg
         desc: 退役蒟蒻的人生回顾
       - sitename: Leetcode
         url: https://leetcode.zxh.io
-        # img: /img/links/leetcode.svg
         desc: 失学失业少年的忧虑
       - sitename: Midgard
         url: https://resume.zxh.io
-        # img: /img/links/resume.svg
         desc: 来找简历吗勇士！
       - sitename: Fishmail
         url: https://fishmail.vercel.app
-        # img: /img/links/fishmail.svg
         desc: 上班摸鱼！
       - sitename: 荒野之息
         url: https://zelda.zxh.io
-        # img: /img/links/zelda.jpg
         desc: 仿 Ori 的荒野之息主页
       - sitename: 小游戏合集
         url: https://galaxy.zxh.io
-        # img: /img/links/game.svg
         desc: 虽然其实也就俩游戏
       - sitename: Cube
         url: https://cube.zxh.io
-        # img: /img/links/cube.svg
         desc: 玩魔方吗朋友
 
 sidebar: auto
 ---
-Vuepress框架基于Vue，自然也可以使用Vue。本节试着添加一些 Element UI 组件
+<el-alert
+    title="Vuepress框架基于Vue，自然也可以使用Vue。试着添加一些 Element UI 组件"
+    type="success"
+    show-icon>
+</el-alert>
 
 按钮：
-<div align=center>
-<el-button type="primary" style="width:100px" >按钮</el-button>
-</div>
+<Button/>
+
 
 输入框：
 <div align=center>
-<el-input v-model="input" placeholder="请输入内容" style="width:100px" ></el-input>
-<div>{{input}}</div>
+<el-input v-model="input" placeholder="" style="width:98px"></el-input>
+<el-badge :value="input" class="item">
+  <el-button size="small" :plain="true" style="height:40px">显示</el-button>
+</el-badge>
 </div>
 
 ## 环境配置
@@ -85,6 +81,7 @@ Vuepress框架基于Vue，自然也可以使用Vue。本节试着添加一些 El
 npm install -D element-ui
 # yarn add -D element-ui
 ```
+
 ### enhanceApp.js
 找到`docs/.vuepress/enhanceApp.js`文件，添加如下内容
 ``` js
@@ -109,7 +106,7 @@ npm install -D async-validator@1.11.5
 ### 直接使用
 在`.md`文件中直接使用
 ``` vue
-<el-button type="primary" style="width:100px" >按钮</el-button>
+<el-button type="primary" style="width:98px" >按钮</el-button>
 ```
 ### 注册为全局组件
 按官方文档所示，所有在`.vuepress/components`中找到的`*.vue`文件将会自动地被注册为全局的异步组件。
@@ -119,17 +116,19 @@ npm install -D async-validator@1.11.5
 ``` md
 <Test/>
 ```
+
 ::: tip
 同样，在`.md`文件中也可以写`<script>`、`<style>`、`YAML front matter`，`frontmatter`可以用`$page.frontmatter.XXX`获取到。
 :::
-
-<!-- <Test/> -->
+<br/>
+<br/>
+<Valine/>
 <script>
 export default {
-  data() {
-    return {
-      input: ''
-    }
-  }
+    data() {
+        return {
+            input: ''
+        }
+    },
 };
 </script>
