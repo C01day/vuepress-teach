@@ -22,7 +22,7 @@ footer: Copyright © 2021 domo,All Rights Reserved.
 ![](https://img.shields.io/badge/email-24602250%40qq.com-red)
 [![](https://img.shields.io/badge/Github-C01day-lightgrey)](https://github.com/C01day)
 [![](https://img.shields.io/badge/deploy-github%20pages-9cf)](https://github.com/C01day/vuepress-teach/tree/gh-pages)
-![](https://img.shields.io/badge/deploy-vercel-9cf)
+[![](https://img.shields.io/badge/deploy-vercel-9cf)](https://vuepress-teach.vercel.app)
 
 <!-- curl -X GET \
    -H "X-LC-Id: AeJrrFpeevG1UiXFy0RufFhV-gzGzoHsz" \
