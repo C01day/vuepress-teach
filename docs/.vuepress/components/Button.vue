@@ -1,5 +1,5 @@
 <template>
-<div align=center> 
+<!-- <div align=center>  -->
   <el-row>
     <el-button @click="def">默认按钮</el-button>
     <el-button type="primary" @click="main">主要按钮</el-button>
@@ -8,22 +8,23 @@
     <el-button type="warning" @click="warning">警告按钮</el-button>
     <el-button type="danger" @click="error">危险按钮</el-button>
   </el-row>
-</div>  
+<!-- </div>   -->
 </template>
 
 <script>
 export default {
   methods: {
       def() {
-        this.$message({
-          message: "默认按钮",
-          showClose: true,
+        this.$notify({
+          title: '提示',
+          message: "这是默认按钮",
         });
       },
       main() {
-        this.$message({
-          message: "主要按钮",
-          showClose: true,
+        this.$notify({
+          title: '提示',
+          message: "这是主要按钮",
+          type: 'success',
         });
       },
       success() {
@@ -56,3 +57,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .el-button {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+</style>

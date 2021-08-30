@@ -21,11 +21,11 @@ module.exports = {
 
         nav: [
           { text: '首页', link: '/' },
-          { text: 'vue组件', link: '/component/' },
           { text: '教程介绍', link: '/guide/' },
           { text: '环境配置', link: '/environment/' },
           { text: '基础教程', link: '/course/' },
           { text: '网站部署', link: '/deployment/' },
+          { text: 'vue组件', link: '/component/' },
           { text: 'Github', link: 'https://github.com/C01day/vuepress-teach' },
 
           // {
